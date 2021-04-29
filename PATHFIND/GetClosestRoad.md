@@ -5,11 +5,12 @@ ns: PATHFIND
 
 ```c
 // 0x132F52BBA570FE92 0x567B0E11
-Any GET_CLOSEST_ROAD(float x, float y, float z, float p3, int p4, Vector3* p5, Vector3* p6, Any* p7, Any* p8, float* p9, BOOL p10);
+Any GET_CLOSEST_ROAD(float x, float y, float z, float p3, int p4, Vector3* p5, Vector3* p6, Any* p7, Any* p8, float* p9, BOOL highwayOnly);
 ```
 
 ```
-p1 seems to be always 1.0f in the scripts  
+p1 seems to be always 1.0f in the scripts
+If highwayOnly is true it will grab the closest highway, false for just the closest road
 ```
 
 ## Parameters
@@ -23,6 +24,6 @@ p1 seems to be always 1.0f in the scripts
 * **p7**: 
 * **p8**: 
 * **p9**: 
-* **p10**: 
+* **highwayOnly**: 
 
 ## Return value
